@@ -1,0 +1,26 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Admin dashboard",
+  "main": "tailwind.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asif03/tailwindcss-dashboard.git"
+  },
+  "keywords": [
+    "Tailwindcss"
+  ],
+  "author": "Md. Asif Iqbal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asif03/tailwindcss-dashboard/issues"
+  },
+  "homepage": "https://github.com/asif03/tailwindcss-dashboard#readme"
+}
