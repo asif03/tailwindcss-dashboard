@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Tailwindcss & Alpine.js</title>
+    <link href="../dist/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="grid grid-cols-1 place-content-center bg-blue-600 h-screen gap-4"
+    >
+      <nav
+        class="w-full bg-[#F2F5FA] h-[68px] px-[135px] py-3 flex flex-row justify-between items-center"
+      >
+        <div class="flex flex-row justify-start items-start gap-[34px]">
+          <a href="#" class="text-gray-400 text-xl font-bold leading-[18.87px]"
+            >GoldenCarers</a
+          >
+          <ul
+            class="list-none justify-start items-start gap-[34px] flex text-sm font-semibold leading-tight"
+          >
+            <li class="">
+              <a
+                href="#"
+                class="rounded-xl border border-slate-200 p-2.5 text-gray-700"
+                >Activities</a
+              >
+            </li>
+            <li><a href="#" class="text-gray-400">Events</a></li>
+            <li><a href="#" class="text-gray-400">Forum</a></li>
+          </ul>
+        </div>
+        <div class="justify-end items-center gap-3 flex relative">
+          <div class="relative">
+            <div
+              class="flex absolute inset-y-0 left-0 ml-2 items-center pr-2 mr-4 pointer-events-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="search"
+              class="w-[266px] h-10 pl-8 pr-2 bg-white rounded-[46px] text-gray-300 text-sm font-semibold leading-tight"
+              placeholder="Search Anything"
+            />
+          </div>
+
+          <select
+            class="flex px-4 py-3 mx-2 text-white bg-gray-700 rounded-[50px] justify-start items-center text-sm font-semibold leading-tight"
+          >
+            <option>Create</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+          </select>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
