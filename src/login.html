@@ -5,13 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="icon" href="../src/assets/images/favicon.ico" />
-    <link href="/dist/style.css" rel="stylesheet" />
+    <link href="../dist/style.css" rel="stylesheet" />
   </head>
-  <body class="bg-blue-500">
+  <body class="bg-blue-500 antialiased">
     <div
-      class="sm:-mx-8 sm:px-8 relative h-screen lg:overflow-hidden bg-primary xl:bg-white dark:bg-darkmode-800 xl:dark:bg-darkmode-600 before:hidden before:xl:block before:content-[''] before:w-[57%] before:-mt-[28%] before:-mb-[16%] before:-ml-[13%] before:absolute before:inset-y-0 before:left-0 before:transform before:rotate-[-4.5deg] before:bg-blue-500/20 before:rounded-[100%] before:dark:bg-darkmode-400 after:hidden after:xl:block after:content-[''] after:w-[57%] after:-mt-[20%] after:-mb-[13%] after:-ml-[13%] after:absolute after:inset-y-0 after:left-0 after:transform after:rotate-[-4.5deg] after:bg-blue-500 after:rounded-[100%] after:dark:bg-darkmode-700"
+      class="font-sans relative h-screen lg:overflow-hidden bg-blue-500 xl:bg-white xl:mb-2 box-border before:hidden before:xl:block before:content-[''] before:w-[57%] before:-mt-[28%] before:-mb-[16%] before:-ml-[13%] before:absolute before:inset-y-0 before:left-0 before:transform before:rotate-[-4.5deg] before:bg-blue-500/20 before:rounded-[100%] after:hidden after:xl:block after:content-[''] after:w-[57%] after:-mt-[20%] after:-mb-[13%] after:-ml-[13%] after:absolute after:inset-y-0 after:left-0 after:transform after:rotate-[-4.5deg] after:bg-blue-500 after:rounded-[100%]"
     >
-      <div>annoyed</div>
+      <div class="container mx-auto relative z-10 sm:px-10">
+        <div class="block grid-cols-2 gap-4 xl:grid">
+          <div class="hidden min-h-screen flex-col xl:flex">
+            <a href="#" class="flex items-center pt-5 animate-introX">
+              <img
+                class="w-6"
+                src="https://rubick-laravel.left4code.com/build/assets/logo-9a88cec5.svg"
+                alt=""
+              />
+              <span class="ml-3 text-lg text-white font-bold"
+                >Company Name</span
+              >
+            </a>
+            <div class="mt-auto mb-auto">
+              <img
+                class="w-1/2 animate-introX"
+                src="https://rubick-laravel.left4code.com/build/assets/illustration-bbfd1da0.svg"
+                alt=""
+              />
+              <div
+                class="animate-introX mt-10 text-4xl font-medium leading-tight text-white"
+              >
+                A few more clicks to <br />
+                sign in to your account.
+              </div>
+              <div
+                class="animate-introX mt-5 text-lg text-white text-opacity-70"
+              >
+                Manage all your e-commerce accounts in one place
+              </div>
+            </div>
+          </div>
+          <div class="my-10 flex h-screen py-5 mx-4 xl:my-0 xl:h-auto xl:py-0">
+            <div
+              class="mx-auto my-auto w-full rounded-md bg-white px-5 py-8 shadow-md sm:w-3/4 sm:px-8 lg:w-2/4 xl:ml-20 xl:w-auto xl:bg-transparent xl:p-0 xl:shadow-none"
+            >
+              <h2
+                class="animate-introXReverse direction-[reverse] text-center text-2xl font-bold xl:text-left xl:text-3xl"
+              >
+                Sign In
+              </h2>
+              <div
+                class="animate-introXReverse mt-2 text-center text-slate-400 xl:hidden"
+              >
+                A few more clicks to sign in to your account. Manage all your
+                e-commerce accounts in one place
+              </div>
+              <div class="animate-introXReverse mt-8">
+                <form id="login-form">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    class="transition duration-200 ease-in-out w-full text-sm border-slate-200 border-[1.5px] shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:outline-none focus:ring-blue-600 focus:ring-opacity-20 focus:border-blue-600 focus:border-opacity-40 mt-4 block px-4 py-3 xl:min-w-[350px]"
+                  />
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                    class="transition duration-200 ease-in-out w-full text-sm border-slate-200 border-[1.5px] shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:outline-none focus:ring-blue-600 focus:ring-opacity-20 focus:border-blue-600 focus:border-opacity-40 mt-4 block px-4 py-3 xl:min-w-[350px]"
+                  />
+                </form>
+              </div>
+              <div
+                class="animate-introXReverse mt-4 flex text-xs text-slate-600 dark:text-slate-500 sm:text-sm"
+              >
+                <div class="mr-auto flex items-center">
+                  <input
+                    id="remember-me"
+                    type="checkbox"
+                    class="h-4 w-4 transition-all duration-100 ease-in-out shadow-sm border-slate-200 cursor-pointer rounded text-blue-800 focus:ring-4 focus:ring-offset-0 focus:ring-blue-800 focus:ring-opacity-20 mr-2 border"
+                  />
+                  <label class="cursor-pointer select-none" for="remember-me">
+                    Remember me
+                  </label>
+                </div>
+                <a href="">Forgot Password?</a>
+              </div>
+              <div
+                class="animate-introXReverse mt-5 text-center xl:mt-8 xl:text-left"
+              >
+                <div class="intro-x mt-5 text-center xl:mt-8 xl:text-left">
+                  <button
+                    id="btn-login"
+                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-blue-800 focus:ring-opacity-20 focus-visible:outline-none bg-blue-800 border-blue-800 text-white w-full px-4 py-3 align-top xl:mr-3 xl:w-32"
+                  >
+                    Login
+                  </button>
+                  <button
+                    class="transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-blue-800 focus:ring-opacity-20 focus-visible:outline-none border-secondary text-slate-500 mt-3 w-full px-4 py-3 align-top xl:mt-0 xl:w-32"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+              <div
+                class="animate-introXReverse mt-10 text-center text-slate-600 dark:text-slate-500 xl:mt-24 xl:text-left"
+              >
+                By signin up, you agree to our
+                <a class="text-primary dark:text-slate-200" href="">
+                  Terms and Conditions
+                </a>
+                &amp;
+                <a class="text-primary dark:text-slate-200" href="">
+                  Privacy Policy
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
