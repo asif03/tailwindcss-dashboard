@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="../dist/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
   </head>
   <body class="antialiased bg-primary dark:bg-slate-800 font-roboto">
-    <div
-      class="w-full fixed bg-primary/90 z-[60] border-b border-white/[0.08] -mt-5 -mx-3 sm:-mx-8 mb-6 dark:bg-darkmode-800/90 md:hidden before:content-[''] before:w-full before:h-screen before:z-10 before:fixed before:inset-x-0 before:bg-black/90 before:transition-opacity before:duration-200 before:ease-in-out before:invisible before:opacity-0"
-    >
-      ASIF
-    </div>
     <div class="mt-[4.7rem] flex overflow-hidden md:mt-0">
       <nav
-        class="side-nav z-10 hidden overflow-x-hidden px-5 pb-16 md:block md:w-[105px] xl:w-[250px]"
+        class="side-nav z-10 hidden overflow-x-hidden pl-5 pr-9 pb-16 md:block md:w-[105px] xl:w-[250px]"
       >
         <a
           class="animate-introXReverse mt-2 flex items-center pt-4 pl-5"
@@ -32,15 +31,110 @@
           <li>
             <a
               href="#"
-              class="h-12 bg-blue-600 flex items-center text-white rounded-lg pl-5 shadow-blue-700 opacity-90 animate-[0.4s_ease-in-out_0.1s_intro-menu] drop-shadow-md font-medium"
-              >Dashboard</a
+              class="h-12 bg-blue-600 dark:bg-slate-600 flex items-center text-white rounded-lg pl-5 shadow-blue-700 dark:shadow-slate-700 opacity-90 animate-[0.4s_ease-in-out_0.1s_intro-menu] drop-shadow-md font-medium"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                icon-name="home"
+                data-lucide="home"
+                class="lucide lucide-home stroke-1.5 mr-2"
+              >
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              Dashboard
+            </a>
           </li>
-          <li>Menu 2</li>
+          <li class="my-2">
+            <a
+              class="h-12 bg-blue-600 dark:bg-slate-600 flex items-center text-white rounded-lg pl-5 shadow-blue-700 dark:shadow-slate-700 opacity-90 animate-[0.4s_ease-in-out_0.1s_intro-menu] drop-shadow-md font-medium"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                icon-name="box"
+                data-lucide="box"
+                class="lucide lucide-box stroke-1.5"
+              >
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                ></path>
+                <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                <line x1="12" y1="22" x2="12" y2="12"></line>
+              </svg>
+
+              <div class="w-full flex justify-between px-2">
+                Menu Layout
+                <div class="side-menu__sub-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    icon-name="chevron-down"
+                    data-lucide="chevron-down"
+                    class="lucide lucide-chevron-down stroke-1.5"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <ul class="side-menu__sub-open" style="display: block">
+              <li>
+                <a
+                  href="https://tinker-laravel.left4code.com?layout=side-menu"
+                  class="side-menu [&amp;:not(.side-menu--active)]:opacity-0 [&amp;:not(.side-menu--active)]:translate-x-[50px] animate-[0.4s_ease-in-out_0.1s_intro-menu] animate-fill-mode-forwards animate-delay-10"
+                >
+                  <div class="side-menu__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      icon-name="activity"
+                      data-lucide="activity"
+                      class="lucide lucide-activity stroke-1.5"
+                    >
+                      <polyline
+                        points="22 12 18 12 15 21 9 3 6 12 2 12"
+                      ></polyline>
+                    </svg>
+                  </div>
+                  <div class="side-menu__title">Side Menu</div>
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <div
-        class="rounded-[30px] md:rounded-[35px/50px_0px_0px_0px] min-w-0 min-h-screen max-w-full md:max-w-none bg-slate-100 flex-1 pb-10 px-4 mx-3 lg:mx-0 md:px-6 relative md:ml-4 dark:bg-slate-700 before:content-[''] before:w-full before:h-px before:block after:content-[''] after:z-[-1] after:rounded-[40px_0px_0px_0px] after:w-full after:inset-y-0 after:absolute after:left-0 lg: lg:after:bg-white/10 after:bg-white/0 after:mt-8 after:-ml-4 lg:after:dark:bg-slate-700/70 after:dark:bg-slate-700/0"
+        class="rounded-[30px] md:rounded-[35px/50px_0px_0px_0px] min-w-0 min-h-screen max-w-full md:max-w-none bg-slate-100 flex-1 pb-10 px-4 md:px-6 mx-3 lg:mx-0 relative md:ml-4 dark:bg-slate-700 before:content-[''] before:w-full before:h-px before:block after:content-[''] after:z-[-1] after:rounded-[40px_0px_0px_0px] after:w-full after:inset-y-0 after:absolute after:left-0 lg: lg:after:bg-white/10 after:bg-white/0 after:mt-8 after:-ml-4 lg:after:dark:bg-slate-700/70 after:dark:bg-slate-700/0"
       >
         <!-- BEGIN: Top Bar -->
         <div
@@ -100,49 +194,49 @@
     </div>
     <script>
       var themeToggleDarkIcon = document.getElementById(
-        'theme-toggle-dark-icon'
+        "theme-toggle-dark-icon"
       );
       var themeToggleLightIcon = document.getElementById(
-        'theme-toggle-light-icon'
+        "theme-toggle-light-icon"
       );
 
       // Change the icons inside the button based on previous settings
       if (
-        localStorage.getItem('theme') === 'dark' ||
-        (!('theme' in localStorage) &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
+        localStorage.getItem("theme") === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
-        document.documentElement.classList.add('dark');
-        themeToggleLightIcon.classList.remove('hidden');
+        document.documentElement.classList.add("dark");
+        themeToggleLightIcon.classList.remove("hidden");
       } else {
-        document.documentElement.classList.remove('dark');
-        themeToggleDarkIcon.classList.remove('hidden');
+        document.documentElement.classList.remove("dark");
+        themeToggleDarkIcon.classList.remove("hidden");
       }
 
-      var themeToggleBtn = document.getElementById('theme-toggle');
+      var themeToggleBtn = document.getElementById("theme-toggle");
 
-      themeToggleBtn.addEventListener('click', function () {
+      themeToggleBtn.addEventListener("click", function () {
         // toggle icons inside button
-        themeToggleDarkIcon.classList.toggle('hidden');
-        themeToggleLightIcon.classList.toggle('hidden');
+        themeToggleDarkIcon.classList.toggle("hidden");
+        themeToggleLightIcon.classList.toggle("hidden");
 
         // if set via local storage previously
-        if (localStorage.getItem('theme')) {
-          if (localStorage.getItem('theme') === 'light') {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
+        if (localStorage.getItem("theme")) {
+          if (localStorage.getItem("theme") === "light") {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
           } else {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
           }
           // if NOT set via local storage previously
         } else {
-          if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
+          if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
           } else {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
           }
         }
       });

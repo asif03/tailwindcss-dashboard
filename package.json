@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Admin dashboard",
   "main": "tailwind.config.js",
-  "dependencies": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2"
+  },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
   },
